@@ -29,7 +29,7 @@ const allowedOrigins: string[] = process.env.FRONTEND_URL
   ? process.env.FRONTEND_URL.split(',').map((url: string) => url.trim())
   : ['http://localhost:3000', 'http://localhost:5173'];
 
-console.log('Ìºê Allowed CORS origins:', allowedOrigins);
+console.log('Allowed CORS origins:', allowedOrigins);
 
 // Socket.IO setup with CORS
 const io = new Server(httpServer, {
@@ -145,9 +145,9 @@ const startServer = async () => {
     await connectDB();
     
     httpServer.listen(PORT, HOST, () => {
-      console.log(\`Ì∫Ä Server running on \${HOST}:\${PORT}\`);
-      console.log(\`Ì≥° WebSocket server ready\`);
-      console.log(\`Ìºç Environment: \${process.env.NODE_ENV}\`);
+      console.log(`Server running on ${HOST}:${PORT}`);
+      console.log(`WebSocket server ready`);
+      console.log(`Environment: ${process.env.NODE_ENV}`);
     });
   } catch (error) {
     console.error('Failed to start server:', error);
