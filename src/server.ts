@@ -27,7 +27,7 @@ const httpServer = createServer(app);
 // Get allowed origins from environment variable (comma-separated) or use defaults
 const allowedOrigins: string[] = process.env.FRONTEND_URL
   ? process.env.FRONTEND_URL.split(',').map((url: string) => url.trim())
-  : ['http://localhost:3000', 'http://localhost:5173'];
+  : ['http://localhost:3000', 'http://localhost:5173', 'https://task3frontend.vercel.app'];
 
 console.log('Allowed CORS origins:', allowedOrigins);
 
