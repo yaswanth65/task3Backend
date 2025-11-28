@@ -1,0 +1,10 @@
+
+> taskflow-backend@1.0.0 dev
+> tsx watch src/server.ts
+
+(node:7076) [MONGOOSE] Warning: Duplicate schema index on {"email":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✅ MongoDB connected successfully
+🚀 Server running on port 5000
+📡 WebSocket server ready
+🌍 Environment: development
